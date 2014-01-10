@@ -38,11 +38,13 @@ class SOMC_Subpages {
 
     $the_pages = wp_list_pages( $args );
 
-    // wrap the output with the sort button and ul tags
-    echo '<button class="subpages-button subpages-button-sort"></button>';
-    echo '<ul>';
-    echo $the_pages;
-    echo '</ul>';
+    if($the_pages) {
+      // wrap the output with the sort button and ul tags
+      echo '<button class="subpages-button subpages-button-sort"></button>';
+      echo '<ul>';
+      echo $the_pages;
+      echo '</ul>';
+    }
   }
   
 } // end class
