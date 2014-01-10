@@ -7,6 +7,8 @@ Supports sorting of nodes and child nodes alphabetically as well as expanding/cl
 
 Shows `post_thumbnail` when available. It handles “infinite” child nodes, although 2-3 levels are recommend in terms of usability.
 
+Styling is very flat and natural so it could easily be customized by higher level stylesheets.
+
 ## Usage
 
 ### Shortcode
