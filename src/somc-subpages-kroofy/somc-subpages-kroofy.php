@@ -73,9 +73,11 @@ class SOMC_Subpages_kroofy {
   function render_shortcode($atts) {
     $subpages = new SOMC_Subpages();
 
-    echo '<div class="subpages-container">';
-    $subpages->render_subpages();
-    echo '</div>';
+    if($subpages->render_subpages()) {
+      echo '<div class="subpages-container">';
+      echo $subpages->render_subpages();
+      echo '</div>';
+    }
   }
   
   /**

@@ -33,11 +33,13 @@ class SOMC_Widget_Subpages extends WP_Widget {
 
     $subpages = new SOMC_Subpages();
 
-    echo $before_widget;
-    if ( $title )
-      echo $before_title . $title . $after_title;
-    $subpages->render_subpages();
-    echo $after_widget;
+    if( !is_null( $subpages->render_subpages() ) ) {
+      echo $before_widget;
+      if ( $title )
+        echo $before_title . $title . $after_title;
+      echo $subpages->render_subpages();
+      echo $after_widget;
+    }
   }
 
   function update( $new_instance, $old_instance ) {
