@@ -13,4 +13,4 @@ Shows `post_thumbnail` when available. It handles “infinite” child nodes, al
 Write [somc­-subpages-kroofy] in the WYSIWYG editor of the pages that contains subpages you want to list.
 
 ### Widget
-Select the ‘Subpages’ widget from the list of widgets and add them to the widgets area you want to use. The active page shows the subpages when available.
+Select the ‘Subpages’ widget from the list of widgets and add it to the widgets area you want to use. The active page shows the subpages when available.
