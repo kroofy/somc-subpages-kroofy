@@ -40,14 +40,14 @@ class SOMC_Subpages {
 
     $output = '';
 
-    if(!is_null($the_pages)) {
+    if( strlen($the_pages) > 0 ) {
       // wrap the output with the sort button and ul tags
       $output .= '<button class="subpages-button subpages-button-sort"></button>';
       $output .= '<ul>';
       $output .= $the_pages;
       $output .= '</ul>';
     }
-    
+
     return $output;
   }
   
